@@ -1,28 +1,45 @@
 {
   "expo": {
-    "name": "writerAi",
-    "slug": "writerAi",
+    "name": "writer-ai",
+    "slug": "writer-ai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.writerai.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.writerai.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      },
+      "firebase": {
+        "apiKey": "dummy_api_key",
+        "authDomain": "writerai-d8f12.firebaseapp.com",
+        "projectId": "writerai-d8f12",
+        "storageBucket": "writerai-d8f12.appspot.com",
+        "messagingSenderId": "123456789012",
+        "appId": "1:123456789012:web:abcdef0123456789"
+      }
     }
   }
 }

@@ -1,0 +1,91 @@
+{
+  "description": "Comprehensive AI Book Assistant Project Rules",
+  "rules": [
+    {
+      "scope": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      "guidelines": [
+        "Use TypeScript for all new code.",
+        "Follow React Native (Expo) best practices.",
+        "Utilize functional components and hooks.",
+        "Maintain consistent code formatting using Prettier.",
+        "Ensure efficient state management with React Context or Zustand.",
+        "Use ChromaDB for vector storage and Firebase/Supabase for cloud storage.",
+        "Implement strict TypeScript types for all API responses and components.",
+        "Optimize performance by minimizing unnecessary re-renders."
+      ]
+    },
+    {
+      "scope": ["*.json"],
+      "guidelines": [
+        "Ensure all JSON files are properly formatted and validated.",
+        "Use camelCase for key names.",
+        "Keep configuration files modular and well-structured.",
+        "Minimize redundant configurations and ensure reusability."
+      ]
+    },
+    {
+      "scope": ["*.md"],
+      "guidelines": [
+        "Use Markdown for documentation.",
+        "Follow the project's documentation style guide.",
+        "Provide clear instructions for setup, usage, and development.",
+        "Maintain a structured table of contents for long documents."
+      ]
+    }
+  ],
+  "context": {
+    "project": "AI Book Assistant",
+    "description": "A mobile application that assists users in writing books using AI.",
+    "technologies": ["React Native (Expo)", "TypeScript", "ChromaDB", "Firebase", "Supabase", "OpenAI GPT-4", "Gemini API"],
+    "features": [
+      "Two writing modes: AI-guided and user-initiated.",
+      "Vector database for storing and recalling story elements.",
+      "Real-time AI suggestions for plot and character development.",
+      "Text-to-speech and dictation for seamless user experience.",
+      "Cross-platform support for book exporting (PDF, EPUB, AudioBook).",
+      "AI-assisted grammar and style enhancements.",
+      "Interactive writing prompts and dynamic inspiration suggestions.",
+      "Story map visualization to track narrative flow and character development.",
+      "Offline mode for writing without internet access.",
+      "Cloud synchronization to ensure seamless access across devices."
+    ],
+    "development_stages": [
+      {
+        "phase": "Setup & Core Structure (1-2 Weeks)",
+        "tasks": [
+          "Initialize Expo project and setup dependencies.",
+          "Implement navigation and routing.",
+          "Establish basic UI components.",
+          "Integrate OpenAI/Gemini API for AI functionality."
+        ]
+      },
+      {
+        "phase": "AI Writing System & Database (2-3 Weeks)",
+        "tasks": [
+          "Implement AI-guided writing mode.",
+          "Develop user-initiated writing mode with AI suggestions.",
+          "Setup ChromaDB for vector storage.",
+          "Create real-time AI interaction for feedback and improvements."
+        ]
+      },
+      {
+        "phase": "UX Enhancements & Additional Features (2 Weeks)",
+        "tasks": [
+          "Implement story map visualization.",
+          "Develop inspiration module with AI-generated prompts.",
+          "Enable text-to-speech and dictation features.",
+          "Optimize UI/UX for a smooth writing experience."
+        ]
+      },
+      {
+        "phase": "Testing, Optimization & Deployment (2 Weeks)",
+        "tasks": [
+          "Perform beta testing and gather user feedback.",
+          "Fix bugs and optimize performance.",
+          "Integrate cloud storage for synchronization.",
+          "Deploy to Play Store & App Store."
+        ]
+      }
+    ]
+  }
+}
